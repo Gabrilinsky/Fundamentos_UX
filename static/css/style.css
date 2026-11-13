@@ -1,0 +1,76 @@
+/* Botón claro estilo Figma ("explicación") */
+.btn-figma-light {
+  margin-top: 1rem;
+  background-color: #f5f5f5;
+  color: #1e1b18;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-figma-light:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.03);
+}
+
+/* Barra inferior estilo Frame 5 */
+.bottom-nav {
+  background-color: #f5f5f5;
+  border-top: 2px solid #3e3530;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.9rem 1rem;
+  margin-top: 3rem;
+}
+
+.bottom-nav a {
+  color: #1e1b18;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.bottom-nav a:hover {
+  color: #c0392b;
+}
+
+/* Ventana emergente de Explicación */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 300;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  background-color: #2a2421;
+  border: 1px solid #3e3530;
+  border-radius: 12px;
+  max-width: 450px;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.modal-box h3 {
+  color: #d35400;
+  margin-bottom: 0.8rem;
+}
+
+.modal-box p {
+  color: #f5f5f5;
+  margin-bottom: 1.4rem;
+  font-size: 0.95rem;
+}
